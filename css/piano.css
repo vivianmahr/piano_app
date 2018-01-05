@@ -1,0 +1,81 @@
+body {
+}
+#piano-wrapper{
+	height: 360px;
+	border: 3px solid black;
+	background: red;
+}
+
+#piano-div {
+	background: blue;
+	height: 100%;
+	overflow: hidden;
+}
+
+.keys {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.keys li{
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+.white-note {
+	position: relative;
+	z-index: 3;
+	background: white;
+	height: 340px;
+	width: 60px;
+	float: left;
+	border-bottom: 20px solid #CECECE;
+	border-right: 3px solid #313131;
+}
+
+
+.white-note:hover {
+	background: #EEE;
+}
+
+.white-note:active {
+	background: #CECECE;
+}
+
+.black-note {
+	position: relative;
+	z-index: 4;
+	margin: 0 -20px 0 -20px;
+	background: black;
+	height: 180px;
+	width: 20px;
+	float: left;
+	border-right: 10px solid #000;
+	border-bottom: 20px solid #222;
+	border-left: 10px solid #333;
+}
+
+.black-note:hover {
+	background: #111;
+}
+
+.black-note:active {
+	background: #000;
+	border-left: 10px solid #000;
+	border-bottom: 20px solid #000;
+	border-right: 10px solid #000;
+}
+
+.padding-key {
+	background: none;
+	border: none;
+}
+
+.white-note .note-labels {
+	position: absolute;
+	bottom: 5px; left: 0; right: 0;
+	margin: 0 auto;
+	text-align: center;
+}
